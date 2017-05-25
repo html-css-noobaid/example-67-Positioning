@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Positioning</title>
+		
+		<style type="text/css">
+			body {
+				width: 750px;
+				font-family: "Courier New", Courier, monospace;
+			}
+
+			#title {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				background-color: gray;
+				color: white;
+				width: 100%;	
+			}
+			
+			#normal {
+				/* position: static; */
+				margin-top: 75px;
+			}
+
+		
+			#relative {
+				position: relative;
+				top: 10px;
+				left: 100px;
+			}
+
+			#absolute {
+				position: absolute;
+				top: 200px;
+				left: 10px;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1 id="title">CSS Layout Tutorial</h1>
+		
+		<p id="normal">Normal positioning is when block-level 
+			elements such as paragraphs sit on top of
+			each of other, this is the default.</p>
+
+		<p id="relative">Relative positioning is when an element
+			is positioned relative to where it would have been
+			in normal flow.</p>
+
+		<p id="absolute">Absolute positioning is when an element is
+			positioned relative to its first positioned 
+		        (non static) ancestor element.</p>
+	</body>
+</html>
